@@ -5,7 +5,7 @@ const prefix = '=';
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` =help | Legend System ✨ `,"https://www.twitch.tv/S-F")
+client.user.setGame(` =help | =inv `,"https://www.twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -210,36 +210,46 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
-			  اوامر عامة
-❖=allbots ~ لعرض جميع البوتات الي بالسيرفر
-❖=server ~يعرض لك معلومات عن السيرفر
-❖=bot ~ يعرض لك كل معلومات البوت
-❖=skin <name> ~ يعرض لك سكنك بماين كرافت
-❖=count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-❖=invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
-❖=invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
-❖=cal ~ اله حاسبة
-❖=trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
-❖=short ~ يختصر لك رابط كبير الى رابط صغير
-❖=tag ~ يكتب لك الكلمة بشكل جميل وكبير
-❖=google ~ للبحث في قوقل عن طريق الدسكورد
-❖=perms ~ يعرض لك برمشناتك بالسيرفر
-❖=za5 ~ يزخرف لك كلمة او جملة
-❖=rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
-❖=roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
-❖=emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
-❖=say ~ يكرر الكلام الي تكتبو
-❖=image ~ صورة السيرفر
-❖=members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
-❖=id ~ معلومات عنك
-❖=bans ~ عدد الاشخاص المبندة 
-❖=avatar ~ صورتك او صورة الي تمنشنو
-❖=embed ~ يكرر الي تقولو بشكل حلو
-❖=emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
-❖=inv ~ لدعوة البوت الى سيرفرك
-❖=support ~ سيرفر الدعم
-❖=contact ~ ارسال اقتراح او لمراسلة صاحب البوت
-❖=topinv لعرض اكثر الاعضاء الذين يدعون
+[❖═════ General Commands ═══════❖]
+
+ **
+╔═══╦╗──────╔══╗───╔╗
+║╔═╗║║──────║╔╗║──╔╝╚╗
+║╚═╝║║╔╗╔╦══╣╚╝╚╦═╩╗╔╝
+║╔══╣║║║║║══╣╔═╗║╔╗║║
+║║──║╚╣╚╝╠══║╚═╝║╚╝║╚╗
+╚╝──╚═╩══╩══╩═══╩══╩═╝
+
+ ⚙=allbots ~ لعرض جميع البوتات الي بالسيرفر
+ ⚙=server ~يعرض لك معلومات عن السيرفر
+ ⚙=bot ~ يعرض لك كل معلومات البوت
+ ⚙=skin <name> ~ يعرض لك سكنك بماين كرافت
+ ⚙=count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
+ ⚙=invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
+ ⚙=invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
+ ⚙=cal ~ اله حاسبة
+ ⚙=trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
+ ⚙=short ~ يختصر لك رابط كبير الى رابط صغير
+ ⚙=tag ~ يكتب لك الكلمة بشكل جميل وكبير
+ ⚙=google ~ للبحث في قوقل عن طريق الدسكورد
+ ⚙=perms ~ يعرض لك برمشناتك بالسيرفر
+ ⚙=za5 ~ يزخرف لك كلمة او جملة
+ ⚙=rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
+ ⚙=roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
+ ⚙=emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
+ ⚙=say ~ يكرر الكلام الي تكتبو
+ ⚙=image ~ صورة السيرفر
+ ⚙=members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+ ⚙=id ~ معلومات عنك
+ ⚙=bans ~ عدد الاشخاص المبندة 
+ ⚙=avatar ~ صورتك او صورة الي تمنشنو
+ ⚙=embed ~ يكرر الي تقولو بشكل حلو
+ ⚙=emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
+ ⚙=inv ~ لدعوة البوت الى سيرفرك
+ ⚙=support ~ سيرفر الدعم
+ ⚙=contact ~ ارسال اقتراح او لمراسلة صاحب البوت
+ ⚙=topinv لعرض اكثر الاعضاء الذين يدعون
+**
 
 `)
    message.author.sendEmbed(embed)
@@ -254,30 +264,39 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
-	      اوامر ادارة السيرفر
-❖=move @user ~  لسحب الشخص الى روومك
-❖=bc ~ رسالة جماعية الى كل اعضاء السيرفر
-❖=role @user <rank> ~ لأعطاء رتبة لعضو معين
-❖=roleremove @user <rank> ~ لازالة الرتبة من شخص معين
-❖=role all <rank> ~ لأعطاء رتبة للجميع
-❖=role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
-❖=role bots <rank> ~ لأعطاء رتبة لجميع البوتات
-❖=hc ~ اخفاء الشات
-❖=sc ~ اضهار الشات المخفية
-❖=clr <numbr> ~ مسح الشات بعدد
-❖=clear ~ مسح الشات
-❖=mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
-❖=unmute @user ~ لفك الميوت عن الشخص 
-❖=kick @user <reason> ~ طرد الشخص من السيرفر
-❖=ban @user <reason> ~ حضر الشخص من السيرفر
-❖=mutec ~ تقفيل الشات
-❖=unmutec ~ فتح الشات
-❖=SetText <name> ~ انشاء شات
-❖=setVoice <name> ~ انشاء رووم فويس
-❖=delet <name> ~ مسح الشات او الرووم فويس
-❖=ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
-❖=setlogs toggle ~ علشان تفعل اللوق
-❖=VoiceOnline ~ لعرض الفويس اونلاين
+[❖═════ Administrator Commands ═══════❖]
+**
+╔═══╦╗──────╔══╗───╔╗
+║╔═╗║║──────║╔╗║──╔╝╚╗
+║╚═╝║║╔╗╔╦══╣╚╝╚╦═╩╗╔╝
+║╔══╣║║║║║══╣╔═╗║╔╗║║
+║║──║╚╣╚╝╠══║╚═╝║╚╝║╚╗
+╚╝──╚═╩══╩══╩═══╩══╩═╝
+
+ ⚙=move @user ~  لسحب الشخص الى روومك
+ ⚙=bc ~ رسالة جماعية الى كل اعضاء السيرفر
+ ⚙=role @user <rank> ~ لأعطاء رتبة لعضو معين
+ ⚙=roleremove @user <rank> ~ لازالة الرتبة من شخص معين
+ ⚙=role all <rank> ~ لأعطاء رتبة للجميع
+ ⚙=role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
+ ⚙=role bots <rank> ~ لأعطاء رتبة لجميع البوتات
+ ⚙=hc ~ اخفاء الشات
+ ⚙=sc ~ اضهار الشات المخفية
+ ⚙=clr <numbr> ~ مسح الشات بعدد
+ ⚙=clear ~ مسح الشات
+ ⚙=mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
+ ⚙=unmute @user ~ لفك الميوت عن الشخص 
+ ⚙=kick @user <reason> ~ طرد الشخص من السيرفر
+ ⚙=ban @user <reason> ~ حضر الشخص من السيرفر
+ ⚙=mutec ~ تقفيل الشات
+ ⚙=unmutec ~ فتح الشات
+ ⚙=SetText <name> ~ انشاء شات
+ ⚙=setVoice <name> ~ انشاء رووم فويس
+ ⚙=delet <name> ~ مسح الشات او الرووم فويس
+ ⚙=ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
+ ⚙=setlogs toggle ~ علشان تفعل اللوق
+ ⚙=VoiceOnline ~ لعرض الفويس اونلاين
+**
 `)
    message.author.sendEmbed(embed)
     
@@ -291,19 +310,29 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
-          اوامر الالعاب
-❖=rps ~ حجر ورقة مقص
-❖=speed ~ اسرع كتابة
-❖=quas ~ اسئلة عامة
-❖=نكت ~ نكت 
-❖=لعبة فكك ~ فكك
-❖=عواصم عشوائية ~ عواصم
-❖=لعبة كت تويت ~ كت تويت
-❖=roll <number> ~ قرعة
-❖=لو خيروك بطريقة حلوة ~ لو خيروك
-❖=لعبة مريم ~ مريم
-❖=فوائد ونصائح  ~ هل تعلم
-❖=يعطيك عقابات قاسية ~ عقاب   `)
+[❖═════ Games Commands ═══════❖]
+**
+╔═══╦╗──────╔══╗───╔╗
+║╔═╗║║──────║╔╗║──╔╝╚╗
+║╚═╝║║╔╗╔╦══╣╚╝╚╦═╩╗╔╝
+║╔══╣║║║║║══╣╔═╗║╔╗║║
+║║──║╚╣╚╝╠══║╚═╝║╚╝║╚╗
+╚╝──╚═╩══╩══╩═══╩══╩═╝
+
+⚙=rps ~ حجر ورقة مقص
+⚙=speed ~ اسرع كتابة
+⚙=quas ~ اسئلة عامة
+⚙=نكت ~ نكت 
+⚙=لعبة فكك ~ فكك
+⚙=عواصم عشوائية ~ عواصم
+⚙=لعبة كت تويت ~ كت تويت
+⚙=roll <number> ~ قرعة
+⚙=لو خيروك بطريقة حلوة ~ لو خيروك
+⚙=لعبة مريم ~ مريم
+⚙=فوائد ونصائح  ~ هل تعلم
+⚙=يعطيك عقابات قاسية ~ عقاب 
+**
+`)
    message.author.sendEmbed(embed)
     
    }
@@ -316,15 +345,15 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
-	        اوامر الموسيقى 
-❖${prefix}play ~ لتشغيل أغنية برآبط أو بأسم
-❖${prefix}skip ~ لتجآوز الأغنية الحآلية
-❖${prefix}pause ~ إيقآف الأغنية مؤقتا
-❖${prefix}resume ~ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-❖${prefix}vol ~ لتغيير درجة الصوت 100 - 0
-❖${prefix}stop ~ لإخرآج البوت من الروم
-❖${prefix}np ~ لمعرفة الأغنية المشغلة حآليا
-❖${prefix}queue ~ لمعرفة قآئمة التشغيل
+[❖═════ Music Commands ═══════❖]
+ ⚙${prefix}play ~ لتشغيل أغنية برآبط أو بأسم
+ ⚙${prefix}skip ~ لتجآوز الأغنية الحآلية
+ ⚙${prefix}pause ~ إيقآف الأغنية مؤقتا
+ ⚙${prefix}resume ~ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+ ⚙${prefix}vol ~ لتغيير درجة الصوت 100 - 0
+ ⚙${prefix}stop ~ لإخرآج البوت من الروم
+ ⚙${prefix}np ~ لمعرفة الأغنية المشغلة حآليا
+ ⚙${prefix}queue ~ لمعرفة قآئمة التشغيل
  `)
    message.author.sendEmbed(embed)
     
@@ -358,9 +387,9 @@ client.channels.get("406877114936197120").sendEmbed(embed)
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('LG=bcall')){
- if (message.author.id !== '406877114936197120') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '406877114936197120') return;
+if (message.content.startsWith('=bcall')){
+ if (message.author.id !== '536509623734370304') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '536509623734370304') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -554,7 +583,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "=v";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['536509623734370304','536509623734370304'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -922,7 +951,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ - ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | ITz1uKY')
+			      .setFooter('By | Youssef')
     })
 }
 });
@@ -2148,7 +2177,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("349616310734553088","335027415619338240").send(
+client.users.get("536509623734370304","536509623734370304").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2160,7 +2189,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By ITz1uKY")
+     .setFooter("By Youssef")
                                                 
 
 message.channel.send(embed);
@@ -2307,7 +2336,7 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: Click Here `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=489909153368768523&permissions=8&scope=bot`)        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=544651746220441600&permissions=8&scope=bot`)        
      message.channel.sendEmbed(embed);
        }
    });
@@ -2361,7 +2390,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/9AUmT3C**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/ZqVAasq**")
      
      
   message.channel.sendEmbed(embed);
